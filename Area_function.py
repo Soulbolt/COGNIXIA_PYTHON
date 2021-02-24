@@ -1,15 +1,15 @@
+r = 4
+h = 10
 
 def area(radius):
-    PI = 3.14
-    c_area = PI * radius * radius
-    
-    return  c_area
-result = area(4)
-print("Area of a circle is : " result)
+    return(3.14 * radius**2)
 
-def volume(c_area, height):
-    vol = c_area * height
-    return vol
+def volume(area, height):
+    return(area * height)
 
-result = volume(50.24, 10)
-print("Volume is: " result)
+c_area = area(r)
+volume(c_area, h)
+print("Area of circle:")
+print(c_area)
+print("Volume is :")
+print(volume(c_area, h))
