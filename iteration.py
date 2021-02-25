@@ -1,13 +1,13 @@
 
-for i in range(1,8):
-    print(i)
+#for i in range(1,8):
+#    print(i)
 
-#i = 0
-#while i <= 6:
- #   i += 1
-  #  print(i)
+#n = 0
+#while n <= 6:
+#    n += 1
+#    print(n)
 
-#x = 0
-#while x<100:
- #   x += 2
-  #  print(x)
+x = 0
+while x<100:
+    x += 2
+    print(x)
