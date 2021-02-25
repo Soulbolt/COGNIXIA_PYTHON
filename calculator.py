@@ -18,24 +18,30 @@ class Calculator():
     def divide(self):
         
         if (y == 0 or x == 0):
-            a = "You can't divide vy zero."
+            return "You can't divide by zero."
         else:
             return self.x / self.y      
 
     def sqrt(self):
-        return math.sqrt(x), math.sqrt(y)
+        return 'Square root of numer one: ',math.sqrt(x), 'Square root of number 2: ', math.sqrt(y)
 
 x = int(input("Enter first number: "))
 y = int(input("Enter second number: "))
 
 obj = Calculator(x, y)
 while True:
-    
+    print("===================================================")
+    print("######## Welcome To the Calculator Program!########")
+    print("===================================================")
     def menu():
         b = ('1. Add \n2. Sub \n3. Multiply \n4. Divide \n5. SquareRoot \n-1. To Quit') 
         print(b)
+
     menu()
+    print()
     choice = int(input('Please select one of the options above : ')) 
+    print("===================================================")
+
     if choice == 1:
         print("Result: ",obj.add())
     elif choice == 2:
@@ -53,5 +59,9 @@ while True:
         break
     else:
         print('Invalid option') 
-        break       
+        print("===================================================")      
 print()
+
+
+if __name__ == "__main__":
+    Calculator
