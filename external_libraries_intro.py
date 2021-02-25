@@ -8,16 +8,18 @@ except ModuleNotFoundError:
 
 #print(math.sqrt(4))
 
-PI = math.pi
-E = math.e
-
-#print(dir(math))
-def function1():
-    pass
+color = "blue"
+make = "Tesla"
+year = 2020
+cost = 50
 
 
-def function2():
-    pass
+def start_car():
+    print("veroom")
+
+
+def paint_car(new_color):
+    color = new_color
 
 
 print("According to python internals, the name of the file is currently:", __name__)
