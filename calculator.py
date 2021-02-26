@@ -1,7 +1,10 @@
 import math
+import logging
+
+logging.basicConfig(level=logging.DEBUG, encoding='utf-8', filename='calculator.log')
 
 class Calculator():
-
+    
     def __init__(self, x, y):
         self.x = x
         self.y = y
