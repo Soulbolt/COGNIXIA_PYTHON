@@ -1,4 +1,6 @@
-#year = 1800
+#Gregorian calendar, the years 2000 and 2400 are leap years,
+#while 1800, 1900, 2100, 2200, 2300 and 2500 are NOT leap years.
+
 
 def leap_year():
     year = int(input("Enter year to check if is a leap year or enter 0 to quit: "))
@@ -13,5 +15,6 @@ def leap_year():
                     print("{0} is not a leap year".format(year))
                     year = int(input("Enter year to check if is a leap year or enter 0 to quit: "))
 
+if __name__ == "__main__":
 
-leap_year()
+    leap_year()
